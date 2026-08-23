@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>For Charuvi 💗</title>
+  <meta name="description" content="A tiny question for Charuvi 💗">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@400;500;600;700&family=Allura&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="hearts" id="hearts"></div>
+
+  <!-- PAGE 1 -->
+  <main class="page page-one" id="pageOne">
+    <section class="card">
+      <div class="top-decoration">💗</div>
+      <div class="penguin">🐧</div>
+
+      <h1>Charuvi,</h1>
+      <h2>When are we stepping out<br>Cutie? 🥺</h2>
+      <p class="subtitle">Asking for very important reasons... obviously. 😌</p>
+
+      <div class="buttons">
+        <button class="yes-btn" id="yesBtn">Yes 💕</button>
+        <button class="no-btn" id="noBtn">No 🙈</button>
+      </div>
+
+      <p class="no-message" id="noMessage">"No" seems a bit shy 💖</p>
+    </section>
+  </main>
+
+  <!-- PAGE 2 -->
+  <main class="page page-two" id="pageTwo" aria-hidden="true">
+    <section class="love-page">
+      <div class="love-note">💌 <span>You have a love note!</span></div>
+
+      <div class="hero-photo-wrap">
+        <img class="hero-photo" src="assets/cow.png" alt="Cute cow with flowers">
+      </div>
+<div class="divider"></div>
+      <p class="footer-text">Made just for you, Charuvi 💗</p>
+
+      <button class="music-fab" id="musicBtn" aria-label="Play music">♫</button>
+    </section>
+  </main>
+
+  <!-- LOVE NOTE POPUP -->
+  <div class="modal" id="noteModal" aria-hidden="true">
+    <div class="modal-card">
+      <button class="modal-close" id="modalClose" aria-label="Close">×</button>
+
+      <div class="envelope">💌</div>
+      <h2>One tiny request...</h2>
+      <p>
+        We keep missing each other somehow 😭<br>
+        Give me your WhatsApp number so I don't have to keep wondering
+        when you're free. 🥺
+      </p>
+
+      <label for="whatsappInput">Your WhatsApp number</label>
+      <input
+        id="whatsappInput"
+        type="tel"
+        inputmode="numeric"
+        autocomplete="tel"
+        placeholder="e.g. 91XXXXXXXXXX"
+      >
+
+      <button class="whatsapp-btn" id="whatsappBtn">
+        Yes, let's stay in touch 💚
+      </button>
+
+      <p class="privacy-note">
+        Your number is only placed into the WhatsApp message you choose to send.
+      </p>
+    </div>
+  </div>
+
+  <!-- MUSIC POPUP / PLAYER -->
+  <div class="music-modal" id="musicModal" aria-hidden="true">
+    <div class="music-card">
+      <button class="modal-close" id="musicClose" aria-label="Close">×</button>
+      <div class="music-icon">🎵</div>
+      <h2>Our little soundtrack 💗</h2>
+      <p id="musicHelp">
+        Tap play below!
+      </p>
+      <iframe
+        id="spotifyPlayer"
+        title="Spotify music player"
+        src=""
+        width="100%"
+        height="152"
+        frameborder="0"
+        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+        loading="lazy">
+      </iframe>
+    </div>
+  </div>
+
+  <!-- MEMORY MODAL -->
+<h2>Our memories are waiting... 💕</h2>
+      <p>
+      </p>
+</div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
